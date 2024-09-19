@@ -26,6 +26,16 @@ def is_image_file(file_path):
 
 
 def get_image_list(folder_path):
+
+    """
+    Lấy danh sách các đối tượng hình ảnh từ một thư mục.
+    Args:
+        folder_path (str): Đường dẫn tới thư mục chứa các tệp hình ảnh.
+
+    Returns:
+        list: Danh sách các đối tượng hình ảnh (Image).
+    """
+    
     image_list = []
     if os.path.exists(folder_path) and os.path.isdir(folder_path):
         filenames = os.listdir(folder_path)
